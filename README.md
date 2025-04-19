@@ -61,9 +61,9 @@ root/
 
 3. Message Formatting:
 
-- `*bold*` → **bold**
-- `_italic_` → *italic*
-- URLs (e.g., `https://example.com`) are automatically clickable.
+ - `*bold*` → **bold**
+ - `_italic_` → *italic*
+ - URLs (e.g., `https://example.com`) are automatically clickable.
 
 4. User List: Shows current participants in the room.
 
@@ -89,35 +89,35 @@ root/
 
 1. Joining a Room
 
-- Enter a username and room name.
+ - Enter a username and room name.
 
-- Click Join Room to enter. If the room doesn’t exist, it will be automatically created.
+ - Click Join Room to enter. If the room doesn’t exist, it will be automatically created.
 
 2. Sending Messages
 
-- Use the input box at the bottom to type your message.
+ -  Use the input box at the bottom to type your message.
 
-- Click Send to deliver your message.
+ - Click Send to deliver your message.
 
-- Messages are broadcast to all users in the room in real time.
+ - Messages are broadcast to all users in the room in real time.
 
 3. Viewing Message History
 
-- Upon joining, you’ll see the last 100 messages from that room.
+ - Upon joining, you’ll see the last 100 messages from that room.
 
-- Messages include timestamps.
+ - Messages include timestamps.
 
 4. User List
 
-- View the list of users currently in the room at the bottom of the chat box.
+ - View the list of users currently in the room at the bottom of the chat box.
 
-- When users leave, they are automatically removed from the list.
+ - When users leave, they are automatically removed from the list.
 
 5. Typing Indicator
 
-- When someone types, a “User is typing...” message appears.
+ - When someone types, a “User is typing...” message appears.
 
-- It disappears once they stop typing.
+ - It disappears once they stop typing.
 
 ##  License
 
