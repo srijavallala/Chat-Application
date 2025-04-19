@@ -87,13 +87,13 @@ root/
 
 ## How to Use the Application
 
-1. Joining a Room
+1. **Joining a Room**
 
  - Enter a username and room name.
 
  - Click Join Room to enter. If the room doesn’t exist, it will be automatically created.
 
-2. Sending Messages
+2. **Sending Messages**
 
  -  Use the input box at the bottom to type your message.
 
@@ -101,19 +101,19 @@ root/
 
  - Messages are broadcast to all users in the room in real time.
 
-3. Viewing Message History
+3. **Viewing Message History**
 
  - Upon joining, you’ll see the last 100 messages from that room.
 
  - Messages include timestamps.
 
-4. User List
+4. **User List**
 
  - View the list of users currently in the room at the bottom of the chat box.
 
  - When users leave, they are automatically removed from the list.
 
-5. Typing Indicator
+5. **Typing Indicator**
 
  - When someone types, a “User is typing...” message appears.
 
