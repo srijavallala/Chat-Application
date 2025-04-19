@@ -55,21 +55,21 @@ root/
 
 ## Features
 
-1. Real-Time Chat: Send and receive messages instantly within a chat room.
+1. **Real-Time Chat**: Send and receive messages instantly within a chat room.
 
-2. Typing Indicator: Displays when users are typing.
+2. **Typing Indicator**: Displays when users are typing.
 
-3. Message Formatting:
+3. **Message Formatting**:
 
  - `*bold*` → **bold**
  - `_italic_` → *italic*
  - URLs (e.g., `https://example.com`) are automatically clickable.
 
-4. User List: Shows current participants in the room.
+4. **User List**: Shows current participants in the room.
 
-5. Persistent Chat History: Loads the latest 100 messages from MongoDB when a user joins.
+5. **Persistent Chat History**: Loads the latest 100 messages from MongoDB when a user joins.
 
-6. Message Sanitization: Prevents XSS attacks using sanitize-html.
+6. **Message Sanitization**: Prevents XSS attacks using sanitize-html.
 
 ## Built With
 
