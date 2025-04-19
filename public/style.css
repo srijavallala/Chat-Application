@@ -1,0 +1,266 @@
+
+/* General body styling */
+body {
+  font-family: "Segoe UI", sans-serif; /* Set font style */
+  background: #f3e5f5; /* Background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100vh; /* Full height of viewport */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  overflow: hidden; /* Hide overflow */
+  color: #5e4b8b; /* Text color */
+}
+
+/* Chat container styles */
+.chat-container {
+  max-width: 800px; /* Maximum width */
+  width: 100%; /* Full width */
+  height: 80vh; /* Height of the chat container */
+  background: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px; /* Padding inside the container */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange items vertically */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  min-height: 500px; /* Minimum height */
+}
+
+/* Room selection and chat box layout */
+.room-selection,
+.chat-box {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange items vertically */
+  gap: 15px; /* Space between items */
+  flex-grow: 1; /* Allow to grow to fill available space */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Hide elements when not in use */
+.hidden {
+  display: none; /* Hides element */
+}
+
+/* Chat messages area */
+#messages {
+  flex-grow: 1; /* Allow to grow to fill available space */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange messages vertically */
+  justify-content: flex-start; /* Align messages to the start */
+  border: 1px solid #ddd; /* Border around the messages area */
+  padding: 10px; /* Padding inside the area */
+  background-color: #f7f7f7; /* Light background */
+  border-radius: 10px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding in total width/height */
+  margin-bottom: 10px; /* Margin at the bottom */
+  max-height: 60vh; /* Maximum height */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  min-height: 300px; /* Minimum height */
+}
+
+#messages::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+#messages::-webkit-scrollbar-thumb {
+  background: #ba2d65; /* Scrollbar color */
+  border-radius: 10px; /* Rounded scrollbar thumb */
+}
+
+#messages::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Scrollbar track color */
+}
+
+/* Message input form */
+#message-form {
+  display: flex; /* Flexbox layout */
+  gap: 15px; /* Space between elements */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Full width */
+}
+
+/* Message input styling */
+#message-input {
+  flex-grow: 1; /* Allow input field to grow */
+  padding: 12px; /* Padding inside input */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #ddd; /* Border color */
+  font-size: 16px; /* Font size */
+  background-color: #fce4ec; /* Background color */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in total width/height */
+  transition: border 0.3s ease; /* Smooth transition for border color */
+}
+
+#message-input:focus {
+  border-color: #4CAF50; /* Green border on focus */
+  outline: none; /* Remove outline on focus */
+}
+
+/* Button styling */
+button {
+  padding: 12px 20px; /* Button padding */
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* User list styles */
+#user-list {
+  list-style: none; /* Remove list bullets */
+  padding-left: 0; /* Remove padding */
+  margin-bottom: 10px; /* Bottom margin */
+  max-height: 100px; /* Maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: #ede7f6; /* Light purple background */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Padding inside list */
+  border: 1px solid #ddd; /* Border color */
+}
+
+/* Individual user item styles */
+#user-list li {
+  padding: 8px 0; /* Vertical padding */
+  color: #333; /* Text color */
+  font-size: 15px; /* Font size */
+}
+
+/* Typing indicator styles */
+#typing-indicator {
+  font-style: italic; /* Italic text */
+  color: #888; /* Grey text color */
+  margin-top: 10px; /* Top margin */
+  font-size: 14px; /* Font size */
+  text-align: center; /* Center the text */
+}
+
+/* Chat message formatting for bold, italics, and links */
+.chat-messages p {
+  margin: 5px 0; /* Margin between paragraphs */
+}
+
+.chat-messages strong {
+  font-weight: bold; /* Bold text */
+}
+
+.chat-messages em {
+  font-style: italic; /* Italic text */
+}
+
+.chat-messages a {
+  color: #007BFF; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.chat-messages a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* User message bubble styles */
+.user-message {
+  background-color: #ede7f6; /* Light purple background */
+  padding: 12px; /* Padding inside message */
+  border-radius: 15px; /* Rounded corners */
+  margin-bottom: 8px; /* Bottom margin */
+  max-width: 80%; /* Limit message width */
+  align-self: flex-start; /* Align to the left */
+  word-wrap: break-word; /* Allow word breaking */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for message */
+  font-size: 14px; /* Font size */
+  line-height: 1.4; /* Line height */
+  animation: fadeIn 0.3s ease-out; /* Fade-in animation */
+  color: #141313; /* Text color */
+}
+
+/* System message bubble (joins, leaves) */
+.system-message {
+  font-style: italic; /* Italic text */
+  color: #888; /* Grey text color */
+  text-align: center; /* Center text */
+  padding: 12px; /* Padding */
+  margin-bottom: 12px; /* Bottom margin */
+  background-color: #f8f4fc; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Current user message bubble */
+.current-user-message {
+  background-color: #fce4ec; /* Light pink background */
+  padding: 12px; /* Padding inside message */
+  border-radius: 15px; /* Rounded corners */
+  margin-bottom: 8px; /* Bottom margin */
+  max-width: 80%; /* Limit message width */
+  align-self: flex-end; /* Align to the right */
+  word-wrap: break-word; /* Allow word breaking */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for message */
+  font-size: 14px; /* Font size */
+  line-height: 1.4; /* Line height */
+  animation: fadeIn 0.3s ease-out; /* Fade-in animation */
+  color: #141313; /* Text color */
+}
+
+/* Fade-in animation for messages */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start from invisible */
+  }
+  to {
+    opacity: 1; /* End at fully visible */
+  }
+}
+
+/* Button styling for send message */
+#send-message-btn {
+  padding: 12px 20px; /* Button padding */
+  background-color: #ec407a; /* Pink background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#send-message-btn:hover {
+  background-color: #d81b60; /* Darker pink on hover */
+}
+
+/* Room input & join button styling */
+.room-selection input,
+.room-selection button {
+  padding: 12px; /* Padding */
+  font-size: 16px; /* Font size */
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #ddd; /* Border color */
+}
+
+.room-selection input {
+  background-color: #F5E6FE; /* Light purple background */
+}
+
+.room-selection button {
+  background-color: #9B59B6; /* Purple background */
+  color: white; /* White text */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-weight: bold; /* Bold text */
+  width: 200px; /* Fixed width */
+}
+
+.room-selection button:hover {
+  background-color: #884EA0; /* Darker purple on hover */
+}
+
+.room-selection input::placeholder {
+  color: #5C5470; /* Placeholder text color */
+}
